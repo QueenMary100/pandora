@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory page - Pandora</title>
+
+    <!-- Bootstrap CSS: use the link tag. Every page that uses Bootstrap must link it. -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- Bootstrap JavaScript: use the script tag with src.
+         The "bundle" file already includes Popper (needed for dropdowns, tooltips, etc.). -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body>
+
+    <!-- Heading: text-danger (red text), bg-dark (black background), text-center -->
+    <h1 class="text-danger bg-dark text-center py-3">Product inventory</h1>
+
+    <div class="container">
+
+        <!-- Buttons: "btn" always comes first, then the colour class -->
+        <div class="my-3">
+            <a class="btn btn-primary" href="index.html">Home</a>
+            <a class="btn btn-warning" href="services.html">Services</a>
+            <a class="btn btn-danger" href="inventory.html">Inventory</a>
+            <a class="btn btn-success" href="products.html">View products</a>
+            <a class="btn btn-secondary" href="employee.html">Employee</a>
+            <a class="btn btn-outline-info" href="register.html">Register</a>
+            <a class="btn btn-outline-dark" href="login.html">Login</a>
+        </div>
+
+        <!-- fw-bold = font-weight: bold, mb-3 = margin-bottom -->
+        <p class="fw-bold mb-3">
+            This is the live stock list for the Pandora warehouse. Items with fewer than 10 units
+            left need to be re-ordered.
+        </p>
+
+        <!-- Table: "table" first, then extra classes.
+             table-responsive lets the table scroll sideways on small phones. -->
+        <div class="table-responsive mb-4">
+            <table class="table table-bordered table-hover table-dark">
+                <thead>
+                    <!-- table-danger on a row colours only that row -->
+                    <tr class="table-danger">
+                        <th scope="col">#</th>
+                        <th scope="col">Product name</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Price (KES)</th>
+                        <th scope="col">In stock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Aero Run sneakers</td>
+                        <td>Sneakers</td>
+                        <td>6,500</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Studio Pro headphones</td>
+                        <td>Audio</td>
+                        <td>9,900</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Metro handbag</td>
+                        <td>Bags</td>
+                        <td>8,500</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Classic Chrono watch</td>
+                        <td>Watches</td>
+                        <td>12,000</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Trail backpack</td>
+                        <td>Bags</td>
+                        <td>4,600</td>
+                        <td>31</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Division with d-flex (children side by side), gap-3 (space between) and
+             text-center (centres everything inside). flex-column flex-md-row stacks the
+             cards on phones and puts them side by side from medium screens up.
+             w-100 makes the three sides equal in width. -->
+        <h2 class="h4">Best sellers (d-flex division)</h2>
+        <div class="bg-info d-flex flex-column flex-md-row gap-3 text-center p-3 mb-4 rounded">
+            <div class="w-100">
+                <h3 class="h5">Aero Run</h3>
+                <p>Lightweight running sneakers with a cushioned sole.</p>
+                <button type="button" class="btn btn-dark">Buy now</button>
+            </div>
+            <div class="w-100">
+                <h3 class="h5">Studio Pro</h3>
+                <p>Over-ear headphones with deep bass and 30-hour battery.</p>
+                <button type="button" class="btn btn-dark">Buy now</button>
+            </div>
+            <div class="w-100">
+                <h3 class="h5">Classic Chrono</h3>
+                <p>A round steel watch with a brown leather strap.</p>
+                <button type="button" class="btn btn-dark">Buy now</button>
+            </div>
+        </div>
+
+        <!-- bootstrap grid system -->
+        <!-- A "row" holds up to 12 columns. Three bare "col" divs share the row equally (4 + 4 + 4). -->
+        <h2 class="h4">Why shop with us (grid: row and col)</h2>
+        <div class="row text-center mb-4">
+            <div class="col">
+                <h3 class="h5">Free shipping</h3>
+                <p>Free delivery on all orders above KES 5,000.</p>
+            </div>
+            <div class="col">
+                <h3 class="h5">High quality</h3>
+                <p>Every item is checked before it leaves the warehouse.</p>
+            </div>
+            <div class="col">
+                <h3 class="h5">Fast delivery</h3>
+                <p>Same-day delivery in Nairobi, 2 to 3 days elsewhere.</p>
+            </div>
+        </div>
+
+        <!-- Unequal widths: 6 + 3 + 3 = 12 columns -->
+        <div class="row text-center mb-5">
+            <div class="col-12 col-md-6 bg-warning p-3">6 of 12 columns</div>
+            <div class="col-6 col-md-3 bg-success text-white p-3">3 of 12</div>
+            <div class="col-6 col-md-3 bg-primary text-white p-3">3 of 12</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
