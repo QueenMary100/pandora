@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-labelledby="t">
+  <title id="t">Blue and grey trainer</title>
+  <rect width="400" height="300" rx="18" fill="#e3eefb"/>
+  <ellipse cx="200" cy="252" rx="160" ry="12" fill="#000" opacity="0.12"/>
+  <!-- upper -->
+  <path d="M62 218 L64 128 Q66 104 94 102 L128 100 Q150 128 182 138 L236 150 Q304 166 338 196 Q350 206 346 218 Z" fill="#3a6ea5"/>
+  <!-- toe cap -->
+  <path d="M262 156 Q318 172 340 198 Q348 208 345 218 L252 218 Q266 190 262 156 Z" fill="#f2f4f8"/>
+  <!-- side stripe -->
+  <path d="M96 204 Q170 196 238 152" fill="none" stroke="#f2f4f8" stroke-width="12" stroke-linecap="round"/>
+  <!-- tongue -->
+  <path d="M120 102 Q132 78 162 84 L180 128 Q148 124 128 104 Z" fill="#f2f4f8"/>
+  <!-- laces -->
+  <g stroke="#ffffff" stroke-width="7" stroke-linecap="round">
+    <path d="M160 118 l30 -10"/><path d="M178 130 l30 -10"/><path d="M198 140 l30 -10"/><path d="M218 148 l28 -8"/>
+  </g>
+  <!-- sole -->
+  <path d="M50 214 H344 Q356 214 356 228 Q356 244 340 244 H70 Q50 244 50 226 Z" fill="#f2f4f8"/>
+  <path d="M60 232 H340" stroke="#000" stroke-opacity="0.12" stroke-width="3"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-labelledby="t">
+  <title id="t">Square steel watch with blue strap</title>
+  <rect width="400" height="300" rx="18" fill="#e6eef7"/>
+  <!-- strap -->
+  <path d="M158 76 L166 8 H234 L242 76 Z" fill="#27456b"/>
+  <path d="M158 224 L166 292 H234 L242 224 Z" fill="#27456b"/>
+  <g fill="#e6eef7" opacity="0.55"><circle cx="200" cy="262" r="3"/><circle cx="200" cy="274" r="3"/><circle cx="200" cy="38" r="3"/></g>
+  <!-- crown -->
+  <rect x="284" y="138" width="14" height="24" rx="4" fill="#d9a21b"/>
+  <!-- case and face -->
+  <rect x="120" y="70" width="160" height="160" rx="36" fill="#aab4c3"/><rect x="132" y="82" width="136" height="136" rx="28" fill="#f5f8fc"/>
+  <g><line x1="200.0" y1="88.0" x2="200.0" y2="78.0" stroke="#1f2a3a" stroke-width="4" stroke-linecap="round"/><line x1="233.0" y1="92.8" x2="236.0" y2="87.6" stroke="#1f2a3a" stroke-width="2" stroke-linecap="round"/><line x1="257.2" y1="117.0" x2="262.4" y2="114.0" stroke="#1f2a3a" stroke-width="2" stroke-linecap="round"/><line x1="262.0" y1="150.0" x2="272.0" y2="150.0" stroke="#1f2a3a" stroke-width="4" stroke-linecap="round"/><line x1="257.2" y1="183.0" x2="262.4" y2="186.0" stroke="#1f2a3a" stroke-width="2" stroke-linecap="round"/><line x1="233.0" y1="207.2" x2="236.0" y2="212.4" stroke="#1f2a3a" stroke-width="2" stroke-linecap="round"/><line x1="200.0" y1="212.0" x2="200.0" y2="222.0" stroke="#1f2a3a" stroke-width="4" stroke-linecap="round"/><line x1="167.0" y1="207.2" x2="164.0" y2="212.4" stroke="#1f2a3a" stroke-width="2" stroke-linecap="round"/><line x1="142.8" y1="183.0" x2="137.6" y2="186.0" stroke="#1f2a3a" stroke-width="2" stroke-linecap="round"/><line x1="138.0" y1="150.0" x2="128.0" y2="150.0" stroke="#1f2a3a" stroke-width="4" stroke-linecap="round"/><line x1="142.8" y1="117.0" x2="137.6" y2="114.0" stroke="#1f2a3a" stroke-width="2" stroke-linecap="round"/><line x1="167.0" y1="92.8" x2="164.0" y2="87.6" stroke="#1f2a3a" stroke-width="2" stroke-linecap="round"/></g>
+  <!-- hands -->
+  <line x1="200" y1="150" x2="200" y2="98" stroke="#1f2a3a" stroke-width="5" stroke-linecap="round"/>
+  <line x1="200" y1="150" x2="236" y2="168" stroke="#1f2a3a" stroke-width="6" stroke-linecap="round"/>
+  <line x1="200" y1="150" x2="168" y2="186" stroke="#d9a21b" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="200" cy="150" r="6" fill="#d9a21b"/>
+</svg>

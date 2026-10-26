@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-labelledby="t">
+  <title id="t">Tan leather handbag</title>
+  <rect width="400" height="300" rx="18" fill="#f7eee3"/>
+  <ellipse cx="200" cy="270" rx="140" ry="9" fill="#000" opacity="0.12"/>
+  <!-- handle -->
+  <path d="M146 132 C146 52 254 52 254 132" fill="none" stroke="#e6c7a3" stroke-width="12" stroke-linecap="round"/>
+  <!-- body -->
+  <path d="M84 128 H316 L340 252 Q342 266 328 266 H72 Q58 266 60 252 Z" fill="#b9794a"/>
+  <!-- flap -->
+  <path d="M84 128 H316 L306 182 Q200 214 94 182 Z" fill="#8c5a34"/>
+  <!-- clasp -->
+  <circle cx="200" cy="190" r="12" fill="#e6c7a3"/>
+  <circle cx="200" cy="190" r="5" fill="#8c5a34"/>
+  <!-- stitching -->
+  <path d="M104 240 H296" stroke="#e6c7a3" stroke-width="3" stroke-dasharray="8 6" opacity="0.8"/>
+</svg>

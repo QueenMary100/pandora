@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="t">
+  <title id="t">Pandora logo</title>
+  <rect width="64" height="64" rx="14" fill="#2b2d42"/>
+  <path d="M20 46 V18 H33 Q45 18 45 28 Q45 38 33 38 H26" fill="none" stroke="#f5c518" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

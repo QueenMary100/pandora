@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-labelledby="t">
+  <title id="t">Rose and cream wireless headphones</title>
+  <rect width="400" height="300" rx="18" fill="#fbeaf0"/>
+  <ellipse cx="200" cy="268" rx="120" ry="9" fill="#000" opacity="0.12"/>
+  <!-- headband -->
+  <path d="M104 190 C104 56 296 56 296 190" fill="none" stroke="#a8506c" stroke-width="18" stroke-linecap="round"/>
+  <path d="M104 190 C104 76 296 76 296 190" fill="none" stroke="#c9748f" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <!-- left ear cup -->
+  <rect x="70" y="150" width="62" height="104" rx="26" fill="#e8c4ad"/>
+  <rect x="124" y="164" width="16" height="76" rx="8" fill="#c9748f"/>
+  <circle cx="98" cy="202" r="12" fill="#c9748f" opacity="0.6"/>
+  <!-- right ear cup -->
+  <rect x="268" y="150" width="62" height="104" rx="26" fill="#e8c4ad"/>
+  <rect x="260" y="164" width="16" height="76" rx="8" fill="#c9748f"/>
+  <circle cx="302" cy="202" r="12" fill="#c9748f" opacity="0.6"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-labelledby="t">
+  <title id="t">Green backpack with front pocket</title>
+  <rect width="400" height="300" rx="18" fill="#e3f2ea"/>
+  <ellipse cx="200" cy="272" rx="110" ry="8" fill="#000" opacity="0.12"/>
+  <!-- top loop -->
+  <path d="M176 74 C176 40 224 40 224 74" fill="none" stroke="#f0e6c8" stroke-width="10" stroke-linecap="round"/>
+  <!-- body -->
+  <rect x="104" y="68" width="192" height="200" rx="56" fill="#2f7d5b"/>
+  <!-- top zip -->
+  <path d="M132 112 H268" stroke="#f0e6c8" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="268" cy="112" r="6" fill="#f0e6c8"/>
+  <!-- front pocket -->
+  <rect x="134" y="148" width="132" height="94" rx="26" fill="#256549"/>
+  <path d="M152 176 H248" stroke="#f0e6c8" stroke-width="5" stroke-linecap="round"/>
+  <!-- side straps -->
+  <path d="M104 150 Q86 190 104 232" fill="none" stroke="#f0e6c8" stroke-width="9" stroke-linecap="round"/>
+  <path d="M296 150 Q314 190 296 232" fill="none" stroke="#f0e6c8" stroke-width="9" stroke-linecap="round"/>
+</svg>
