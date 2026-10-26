@@ -1,0 +1,148 @@
+/* ==========================================================
+   register.css - styles for register.html
+   Linked with: <link rel="stylesheet" href="css/register.css">
+   ========================================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f8;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2b2d42;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 10px;
+}
+
+/* ---------- The whole form ---------- */
+form {
+    background-color: lightblue;
+    width: 50%;
+    margin: auto;          /* centres the form (text-align would not) */
+    padding: 40px;
+    border-radius: 20px;
+}
+
+/* The fieldset only groups things for valid HTML, so remove its default border */
+fieldset.form-box {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- The form title ---------- */
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ---------- Labels and field spacing ---------- */
+.field {
+    margin-top: 16px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+/* Labels that sit beside a radio button or checkbox */
+label.inline {
+    display: inline;
+    font-weight: normal;
+    margin-right: 14px;
+}
+
+/* ---------- Attribute selectors: style inputs by their type ---------- */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="number"],
+input[type="tel"] {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    padding-left: 5px;
+    box-sizing: border-box;   /* so 100% width includes the padding */
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}
+
+/* The dropdown and the textarea get the same look as the inputs */
+select,
+textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    padding: 6px 5px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+/* ---------- Radio and checkbox groups ---------- */
+fieldset.group {
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 16px;
+    padding: 10px 14px;
+}
+
+fieldset.group legend {
+    font-size: 16px;
+    text-align: left;
+    padding: 0 6px;
+}
+
+/* ---------- The button ---------- */
+button {
+    display: block;
+    width: 100%;
+    margin-top: 24px;
+    padding: 12px;
+    background-color: #2b2d42;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0393e;
+}
+
+/* Visible keyboard focus for accessibility */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: 3px solid #f5c518;
+}
+
+/* Wider form on small screens */
+@media (max-width: 800px) {
+    form {
+        width: 85%;
+        padding: 20px;
+    }
+}

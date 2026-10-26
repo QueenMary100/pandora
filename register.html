@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register page - Pandora</title>
+    <!-- External CSS for this page -->
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Already registered? Log in</a>
+    </nav>
+
+    <h1>Create your Pandora account</h1>
+
+    <!--
+        A form ALWAYS starts with <form>. Everything that belongs to it, including the
+        submit button, goes between <form> and </form>.
+        action = where the data is sent (left as "#" until we learn the back end).
+    -->
+    <form action="#" method="post">
+        <!-- A form's title is a legend (a table's title is a caption).
+             A legend must sit inside a fieldset to be valid HTML. -->
+        <fieldset class="form-box">
+            <legend>Join us and start your journey today</legend>
+
+            <!-- label for="x" is linked to the input with id="x" -->
+            <div class="field">
+                <label for="fname">Full name</label>
+                <input type="text" id="fname" name="fullname" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="field">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+            </div>
+
+            <div class="field">
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd" name="password" placeholder="At least 8 characters" minlength="8" required>
+            </div>
+
+            <div class="field">
+                <label for="yob">Birthday</label>
+                <input type="date" id="yob" name="birthday" required>
+            </div>
+
+            <div class="field">
+                <label for="dt">Preferred delivery date and time</label>
+                <input type="datetime-local" id="dt" name="delivery_time" required>
+            </div>
+
+            <div class="field">
+                <label for="phone">Phone number</label>
+                <!-- tel shows a phone keyboard on mobile. The pattern checks 10 to 12 digits. -->
+                <input type="tel" id="phone" name="phone" placeholder="2547XXXXXXXX"
+                       pattern="[0-9]{10,12}" title="Enter 10 to 12 digits, for example 254700000000" required>
+            </div>
+
+            <div class="field">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" min="18" max="100" placeholder="18 or older">
+            </div>
+
+            <div class="field">
+                <label for="photo">Upload a profile photo</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </div>
+
+            <!-- ========== Homework (class 5): dropdown, radio, checkbox, textarea ========== -->
+
+            <!-- Dropdown: choose ONE option from a list -->
+            <div class="field">
+                <label for="category">Favourite category</label>
+                <select id="category" name="category" required>
+                    <option value="" disabled selected>Choose a category</option>
+                    <option value="sneakers">Sneakers</option>
+                    <option value="headphones">Headphones</option>
+                    <option value="bags">Bags</option>
+                    <option value="watches">Watches</option>
+                </select>
+            </div>
+
+            <!-- Radio buttons: choose ONE. All radios in a group share the same name. -->
+            <fieldset class="group">
+                <legend>Gender</legend>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female" class="inline">Female</label>
+
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male" class="inline">Male</label>
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other" class="inline">Other</label>
+
+                <input type="radio" id="nosay" name="gender" value="not_said">
+                <label for="nosay" class="inline">Prefer not to say</label>
+            </fieldset>
+
+            <!-- Checkboxes: choose MANY -->
+            <fieldset class="group">
+                <legend>What are you interested in?</legend>
+                <input type="checkbox" id="int-sneakers" name="interests" value="sneakers">
+                <label for="int-sneakers" class="inline">Sneakers</label>
+
+                <input type="checkbox" id="int-audio" name="interests" value="headphones">
+                <label for="int-audio" class="inline">Headphones</label>
+
+                <input type="checkbox" id="int-bags" name="interests" value="bags">
+                <label for="int-bags" class="inline">Bags</label>
+
+                <input type="checkbox" id="int-watches" name="interests" value="watches">
+                <label for="int-watches" class="inline">Watches</label>
+            </fieldset>
+
+            <!-- Textarea: a large box for multi-line text -->
+            <div class="field">
+                <label for="note">Delivery instructions (optional)</label>
+                <textarea id="note" name="note" rows="4" placeholder="e.g. Leave the parcel with the security guard"></textarea>
+            </div>
+
+            <!-- A single checkbox the user must tick -->
+            <div class="field">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms" class="inline">I agree to the terms and conditions</label>
+            </div>
+
+            <!-- The button must be inside the form to submit it -->
+            <button type="submit">Register</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>
