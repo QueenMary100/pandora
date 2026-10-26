@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee page - Pandora</title>
+
+    <!-- Internal CSS: a style tag inside the head -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        /* border: thickness, style, colour.
+           The comma means "apply the same rule to all three tags". */
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;   /* merge the double lines into one */
+        }
+
+        table {
+            width: 100%;
+        }
+
+        /* An ID targets the first table only, so it can have its own height */
+        #staff {
+            height: 300px;
+        }
+
+        th {
+            background-color: #2b2d42;
+            color: white;
+            padding: 8px;
+        }
+
+        /* th text is centred by default; td needs it set */
+        td {
+            text-align: center;
+            padding: 8px;
+        }
+
+        caption {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        tfoot td {
+            font-weight: bold;
+            background-color: #f5c518;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html">Home</a> | <a href="products.html">Products</a>
+
+    <h1>Employee information</h1>
+    <p>
+        These are some of the people who keep Pandora running. We list each employee's number,
+        name, position and monthly salary.
+    </p>
+
+    <!-- Employee table: <table> first, then one <tr> per row -->
+    <table id="staff">
+        <caption>Pandora staff list</caption>
+        <tr>
+            <th>Number</th>
+            <th>Full name</th>
+            <th>Position</th>
+            <th>Salary (KES)</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Amina Hassan</td>
+            <td>Store manager</td>
+            <td>85,000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Brian Otieno</td>
+            <td>Sales associate</td>
+            <td>45,000</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Cynthia Wanjiru</td>
+            <td>Customer support lead</td>
+            <td>55,000</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Daniel Mutua</td>
+            <td>Delivery coordinator</td>
+            <td>48,000</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Research assignment (class 3): colspan and rowspan in one table -->
+    <h2>Assignment: colspan and rowspan</h2>
+    <p>
+        <code>colspan="3"</code> makes one cell stretch across three columns.
+        <code>rowspan="2"</code> makes one cell stretch down two rows.
+        The cells that are covered are simply left out of the next row's code.
+    </p>
+
+    <table>
+        <caption>Team roster by department</caption>
+        <thead>
+            <tr>
+                <!-- This heading spans all 3 columns -->
+                <th colspan="3">Pandora team roster</th>
+            </tr>
+            <tr>
+                <th>Department</th>
+                <th>Employee</th>
+                <th>Shift</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- "Sales" spans this row and the next one -->
+                <td rowspan="2">Sales</td>
+                <td>Brian Otieno</td>
+                <td>Morning</td>
+            </tr>
+            <tr>
+                <td>Esther Achieng</td>
+                <td>Afternoon</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Support</td>
+                <td>Cynthia Wanjiru</td>
+                <td>Morning</td>
+            </tr>
+            <tr>
+                <td>Felix Kamau</td>
+                <td>Night</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- The label spans the first 2 columns -->
+                <td colspan="2">Total employees on the roster</td>
+                <td>4</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
