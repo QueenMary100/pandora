@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products page - Pandora</title>
+
+    <!-- Internal CSS: written inside the head of this file -->
+    <style>
+        /* The body is the whole white page area */
+        body {
+            background-color: lightblue;
+            margin: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2 {
+            color: #2b2d42;
+        }
+
+        nav a {
+            margin-right: 12px;
+        }
+
+        /* Small thumbnail inside a list item */
+        ol img {
+            width: 60px;
+            height: 40px;
+            vertical-align: middle;
+            border-radius: 6px;
+        }
+
+        /* ---- Assignment: change list markers with list-style-type ---- */
+        .alpha   { list-style-type: lower-alpha; }    /* a, b, c */
+        .roman   { list-style-type: upper-roman; }    /* I, II, III */
+        .zero    { list-style-type: decimal-leading-zero; }  /* 01, 02, 03 */
+        .circle  { list-style-type: circle; }
+        .square  { list-style-type: square; }
+        .none    { list-style-type: none; padding-left: 0; }
+
+        dt {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        dd {
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="employee.html">View employees</a>
+        <a href="services.html">Services</a>
+    </nav>
+
+    <h1>Our products</h1>
+
+    <!-- Ordered list -->
+    <h2>Top four selling products</h2>
+    <p>
+        These four items sold the most in the last quarter. The list is numbered because the
+        order matters: number one is our best seller.
+    </p>
+    <ol>
+        <li><img src="assets/headphones1.svg" alt="Studio Pro headphones"> Studio Pro headphones</li>
+        <li><img src="assets/sneakers1.svg" alt="Aero Run sneakers"> Aero Run sneakers</li>
+        <li><img src="assets/watch1.svg" alt="Classic Chrono watch"> Classic Chrono watch</li>
+        <li><img src="assets/bag2.svg" alt="Trail backpack"> Trail backpack</li>
+    </ol>
+
+    <hr>
+
+    <!-- Unordered list -->
+    <h2>Men's clothing</h2>
+    <p>
+        Our men's range is coming soon. The bullets show that the order does not matter.
+    </p>
+    <ul>
+        <li>Casual t-shirts</li>
+        <li>Jeans and trousers</li>
+        <li>Sportswear</li>
+        <li>Jackets and coats</li>
+    </ul>
+
+    <hr>
+
+    <!-- ===================== ASSIGNMENTS (class 4) ===================== -->
+
+    <!-- Assignment 1: nested list (a list inside a list item) -->
+    <h2>Assignment 1: Nested list - shop categories</h2>
+    <p>
+        A nested list puts a new <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> inside an
+        <code>&lt;li&gt;</code>, before that item's closing tag.
+    </p>
+    <ul>
+        <li>Footwear
+            <ul>
+                <li>Running sneakers</li>
+                <li>Casual sneakers</li>
+                <li>High-tops
+                    <ul>
+                        <li>Men</li>
+                        <li>Women</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Audio
+            <ol>
+                <li>Over-ear headphones</li>
+                <li>In-ear headphones</li>
+                <li>Wireless speakers</li>
+            </ol>
+        </li>
+        <li>Bags
+            <ul>
+                <li>Handbags</li>
+                <li>Backpacks</li>
+            </ul>
+        </li>
+        <li>Watches</li>
+    </ul>
+
+    <hr>
+
+    <!-- Assignment 2: description list (dl > dt + dd) -->
+    <h2>Assignment 2: Description list - product glossary</h2>
+    <p>
+        A description list pairs a term (<code>&lt;dt&gt;</code>) with a description
+        (<code>&lt;dd&gt;</code>), all wrapped in <code>&lt;dl&gt;</code>.
+    </p>
+    <dl>
+        <dt>Sneakers</dt>
+        <dd>Comfortable shoes for running, walking or everyday wear.</dd>
+
+        <dt>Headphones</dt>
+        <dd>Over-ear or in-ear speakers worn on the head for private listening.</dd>
+        <dd>Our wireless range connects with Bluetooth.</dd>
+
+        <dt>Bags</dt>
+        <dd>Handbags, backpacks and totes for work, school and travel.</dd>
+
+        <dt>Watches</dt>
+        <dd>Analogue timepieces with leather or silicone straps.</dd>
+    </dl>
+
+    <hr>
+
+    <!-- Assignment 3: changing the list markers with CSS (see the internal CSS above) -->
+    <h2>Assignment 3: List marker variations</h2>
+
+    <h3>Ordered list markers</h3>
+    <p>Letters (<code>lower-alpha</code>):</p>
+    <ol class="alpha">
+        <li>Sneakers</li>
+        <li>Headphones</li>
+        <li>Bags</li>
+    </ol>
+
+    <p>Roman numerals (<code>upper-roman</code>):</p>
+    <ol class="roman">
+        <li>Sneakers</li>
+        <li>Headphones</li>
+        <li>Bags</li>
+    </ol>
+
+    <p>Leading zero (<code>decimal-leading-zero</code>):</p>
+    <ol class="zero">
+        <li>Sneakers</li>
+        <li>Headphones</li>
+        <li>Bags</li>
+    </ol>
+
+    <h3>Unordered list markers</h3>
+    <p>Default <code>disc</code>:</p>
+    <ul>
+        <li>Watches</li>
+        <li>Bags</li>
+    </ul>
+
+    <p><code>circle</code>:</p>
+    <ul class="circle">
+        <li>Watches</li>
+        <li>Bags</li>
+    </ul>
+
+    <p><code>square</code>:</p>
+    <ul class="square">
+        <li>Watches</li>
+        <li>Bags</li>
+    </ul>
+
+    <p><code>none</code> (no marker):</p>
+    <ul class="none">
+        <li>Watches</li>
+        <li>Bags</li>
+    </ul>
+
+    <p><a href="index.html">Back to the homepage</a></p>
+
+</body>
+</html>
