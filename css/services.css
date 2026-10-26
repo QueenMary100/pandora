@@ -1,0 +1,85 @@
+/* ==========================================================
+   services.css - external CSS for services.html only
+   Linked with: <link rel="stylesheet" href="css/services.css">
+   ========================================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px 40px;
+    line-height: 1.6;
+}
+
+nav a {
+    margin-right: 12px;
+}
+
+/* ID selector (#): targets the ONE paragraph with id="paragraph" */
+#paragraph {
+    font-weight: bold;
+}
+
+/* ID selector: the customer support division */
+#customer {
+    background-color: lightgrey;
+    margin: 40px;
+    padding: 30px;
+    border-radius: 20px;
+    color: black;
+}
+
+/* Container + tag: only the paragraph INSIDE #customer */
+#customer p {
+    font-size: 18px;
+}
+
+/* The parent division: display flex puts the three sides side by side */
+#main {
+    display: flex;
+    margin: 20px 40px;
+}
+
+/* Class selector (.): shared by all three sides */
+.one {
+    background-color: lightyellow;
+    margin-left: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    color: black;
+    flex: 1;            /* each side takes an equal share of the row */
+}
+
+.one:first-child {
+    margin-left: 0;     /* no gap before the first side */
+}
+
+button {
+    background-color: #2b2d42;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Stack the three sides on small screens */
+@media (max-width: 700px) {
+    #main {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .one {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    #customer {
+        margin: 20px 0;
+    }
+}
