@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page - Pandora</title>
+
+    <!-- Styled with Bootstrap ONLY: no custom CSS file and no inline styles -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body class="bg-light">
+
+    <!-- container + flexbox utilities centre the card in the middle of the screen -->
+    <div class="container d-flex justify-content-center align-items-center min-vh-100 py-4">
+        <div class="col-12 col-sm-10 col-md-7 col-lg-5 col-xl-4">
+
+            <div class="card shadow border-0">
+                <div class="card-body p-4">
+
+                    <div class="text-center mb-4">
+                        <img src="assets/logo.svg" alt="Pandora logo" width="56" height="56" class="mb-2">
+                        <h1 class="h3 fw-bold">Welcome back</h1>
+                        <p class="text-secondary mb-0">Log in to your Pandora account</p>
+                    </div>
+
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                   placeholder="abc@gmail.com" autocomplete="email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password"
+                                   placeholder="Enter your password" autocomplete="current-password" required>
+                        </div>
+
+                        <!-- Remember me checkbox -->
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="remember" name="remember">
+                            <label class="form-check-label" for="remember">Remember me</label>
+                        </div>
+
+                        <!-- d-grid makes the button full width -->
+                        <div class="d-grid mb-3">
+                            <button type="submit" class="btn btn-primary btn-lg">Log in</button>
+                        </div>
+
+                        <div class="d-flex justify-content-between small">
+                            <a href="contact.html" class="text-decoration-none">Forgot password?</a>
+                            <a href="register.html" class="text-decoration-none">Create an account</a>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <p class="text-center mt-3">
+                <a href="index.html" class="link-secondary">Back to the homepage</a>
+            </p>
+
+        </div>
+    </div>
+
+</body>
+</html>
