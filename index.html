@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pandora - sneakers, headphones, bags and watches at better prices.">
+    <title>Homepage - Pandora</title>
+    <!-- External CSS: all the shared styling lives in css/style.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <!-- Heading: h1 is the biggest and most important heading on the page -->
+        <h1><img class="logo" src="assets/logo.svg" alt="Pandora logo"> Trending styles, better prices</h1>
+        <p>Pandora is your one-stop e-commerce shop for sneakers, headphones, bags and watches.</p>
+
+        <!--
+            Navigation links (anchor tag).
+            href   = where the link goes (an HTML file for our own pages, a URL for other sites)
+            target = which tab it opens in:
+                _self   same tab (default)
+                _blank  new tab
+            _top and _parent are demonstrated in the html-practice project.
+        -->
+        <nav>
+            <a href="index.html" target="_self">Home</a>
+            <a href="products.html" target="_self">Products</a>
+            <a href="services.html" target="_blank">Services (new tab)</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="payment.html">Payment</a>
+            <a href="employee.html">Employees</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="inventory.html">Inventory</a>
+            <!-- A link to another website uses the full URL -->
+            <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">Learn HTML (W3Schools)</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Welcome paragraph with text-formatting tags -->
+        <p>
+            Welcome to <b>Pandora</b>, an <i>e-commerce website</i> where you can find
+            <u>quality footwear, audio gear, bags and timepieces</u> in one place.
+            <mark>Free delivery on orders above KES 5,000.</mark>
+        </p>
+        <p>
+            We work directly with trusted suppliers, so we skip the middlemen and pass the savings
+            on to you. Browse the latest arrivals below, then head to the products page for the full range.
+        </p>
+
+        <hr>
+
+        <!-- New Arrivals -->
+        <!-- Inline CSS: the style attribute styles this one element only -->
+        <h2 style="color: crimson; text-align: center;">New Arrivals</h2>
+        <p style="font-weight: bold;">
+            Fresh from the box this week: lightweight running sneakers, noise-cancelling
+            headphones and a new range of leather bags.
+        </p>
+        <p>
+            Every new arrival ships within 24 hours and comes with a 14-day return policy,
+            so you can try it with confidence.
+        </p>
+
+        <img src="assets/sneakers1.svg" alt="Red and white running sneaker">
+        <br>
+        <button type="button">Shop now</button>
+
+        <hr>
+
+        <!-- Featured Deals: 10 images from the assets folder -->
+        <h2>Featured Deals</h2>
+        <p>Hand-picked offers on our best sellers. Prices are in Kenya shillings.</p>
+
+        <div class="deals">
+            <figure>
+                <img src="assets/sneakers1.svg" alt="Red and white running sneaker">
+                <figcaption>Aero Run - KES 6,500</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/sneakers2.svg" alt="Blue and grey trainer">
+                <figcaption>Street Blue - KES 5,800</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/sneakers3.svg" alt="Black and yellow sneaker">
+                <figcaption>Bolt High - KES 7,200</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/headphones1.svg" alt="Black over-ear headphones">
+                <figcaption>Studio Pro - KES 9,900</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/headphones2.svg" alt="Rose and cream wireless headphones">
+                <figcaption>Soft Wave - KES 7,400</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/bag1.svg" alt="Tan leather handbag">
+                <figcaption>Metro Handbag - KES 8,500</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/bag2.svg" alt="Green backpack with front pocket">
+                <figcaption>Trail Backpack - KES 4,600</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/watch1.svg" alt="Classic round watch with brown leather strap">
+                <figcaption>Classic Chrono - KES 12,000</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/watch2.svg" alt="Square steel watch with blue strap">
+                <figcaption>Cube Steel - KES 10,500</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/watch3.svg" alt="Black sport watch">
+                <figcaption>Night Sport - KES 6,900</figcaption>
+            </figure>
+        </div>
+
+        <br>
+        <button type="button">See all deals</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pandora. A class project built while learning HTML, CSS and Bootstrap.</p>
+        <p><a href="about.html">About us</a> | <a href="contact.html">Contact</a> | <a href="payment.html">Payment options</a></p>
+    </footer>
+
+</body>
+</html>

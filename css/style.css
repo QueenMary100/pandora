@@ -1,0 +1,174 @@
+/* ==========================================================
+   Pandora - main stylesheet (external CSS)
+   Linked from index.html, about.html, contact.html and
+   payment.html with: <link rel="stylesheet" href="css/style.css">
+   ========================================================== */
+
+/* ---------- Whole page ---------- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+    color: #222;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ---------- Header and navigation ---------- */
+header {
+    background-color: #2b2d42;
+    color: white;
+    padding: 20px 40px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    text-shadow: 4px 2px 8px #000;   /* horizontal, vertical, blur, colour */
+}
+
+header p {
+    margin: 0 0 15px;
+    color: #d9dbe8;
+}
+
+/* "a" is the tag selector for links */
+nav a {
+    display: inline-block;
+    color: white;
+    background-color: #44486e;
+    text-decoration: none;
+    margin: 4px 6px 4px 0;
+    padding: 8px 14px;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: #f5c518;
+    color: #2b2d42;
+}
+
+/* ---------- Main content ---------- */
+main {
+    padding: 20px 40px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #2b2d42;
+}
+
+/* Buttons (class 3: background, colour, margin, padding, radius) */
+button {
+    background-color: #2b2d42;
+    color: white;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0393e;
+}
+
+/* ---------- Images ---------- */
+/* All product images share one size so the grid looks uniform */
+img {
+    width: 300px;
+    height: 225px;          /* 4:3, the same ratio as the images */
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+/* The logo is an image too, so it overrides the rule above */
+img.logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.deals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.deals figure {
+    margin: 0;
+}
+
+.deals figcaption {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+/* ---------- Tables and lists on the info pages ---------- */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+}
+
+th,
+td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #2b2d42;
+    color: white;
+}
+
+/* ---------- Contact form (kept simple, the full form styling is in register.css) ---------- */
+.contact-form {
+    max-width: 500px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: #2b2d42;
+    color: #d9dbe8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #f5c518;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 600px) {
+    header,
+    main {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
